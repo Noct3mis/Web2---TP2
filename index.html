@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moon STUDIO</title>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+</head>
+
+<body class="overflow-x-hidden theme-light">
+
+  <header>
+    <nav class="navbar bg-light bg-opacity-10 navbar-expand-lg fixed-top position-absolute">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto text-white" href="index.html">
+          <img src="images/MoonSTUDIO.png" alt="MoonSTUDIO" class="logo">
+        </a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="images/MoonSTUDIO.png" alt="MoonSTUDIO" class="logo">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">À Propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Contact</a>
+              </li>
+            </ul>
+            <button id="theme-toggle-button" type="button" class="purple-button justify-content-end" onclick="themeToggle()">Changer de thème</button>
+
+          </div>
+        </div>
+        <a href="connexion.html" class="purple-button">Login</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Dawntrail.jpg" class="d-block w-100" alt="Dawntrail">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Helldivers2.jpeg" class="d-block w-100" alt="Helldivers2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Valorant.jpg" class="d-block w-100" alt="Valorant">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="mt-5 px-5 mx-5">
+        <div class="text-center">
+          <h1>Moon STUDIO</h1>
+          <p class="fs-5 mt-5">Basée dans les mystérieuses étendues lunaires,
+            Moon STUDIO est une compagnie de développement
+            de jeux vidéo qui repousse les frontières de
+            l'imaginaire. Avec une équipe composée d'esprits
+            créatifs passionnés par l'exploration spatiale et
+            les récits captivants, Moon STUDIO fusionne la
+            technologie de pointe avec des histoires immersives
+            pour créer des expériences de jeu uniques. Nos jeux
+            transportent les joueurs vers des mondes
+            extraordinaires, où l'aventure, l'action et le
+            suspense se mêlent harmonieusement sous la lueur
+            argentée de notre satellite céleste. Rejoignez-nous
+            dans notre voyage vers l'inconnu et laissez-vous
+            emporter par la magie de Moon STUDIO.</p>
+        </div>
+
+        <div class="text-center mt-5 mb-5">
+          <h1>Jeux en ventes</h1>
+          <div class="row justify-content-center mt-5">
+            <div class="position-relative col-lg-4 col-12 d-flex row justify-content-center colJeux desktop-only">
+              <div class="position-relative">
+                <img src="images/Dawntrail.jpg" alt="Dawntrail" class="my-4 imgJeux">
+                <button class="btn-acheter purple-button">Acheter</button>
+              </div>
+              <p class="textJeux text-white">
+                "Dawntrail" est un jeu vidéo captivant qui plonge les joueurs dans un monde mystérieux et fantastique.
+                L'aventure se déroule dans un paysage post-apocalyptique où les vestiges de la civilisation se mêlent à
+                la nature sauvage et imprévisible. Les joueurs incarnent un héros courageux qui explore des terres
+                ravagées par un cataclysme ancien, cherchant des réponses à des énigmes anciennes et des secrets perdus.
+                Avec des graphismes époustouflants et une histoire immersive, "Dawntrail" offre une expérience de jeu
+                palpitante où l'action, l'exploration et la découverte se conjuguent pour offrir aux joueurs une
+                aventure inoubliable. Préparez-vous à affronter des dangers, à résoudre des énigmes et à découvrir les
+                mystères enfouis du Dawntrail.
+              </p>
+            </div>
+
+            <div class="position-relative mx-md-5 col-lg-4 col-12 d-flex row justify-content-center colJeux desktop-only">
+              <div class="position-relative">
+                <img src="images/Helldivers2.jpeg" alt="Helldivers2" class="my-4 imgJeux">
+                <button class="btn-acheter purple-button">Acheter</button>
+              </div>
+              <p class="textJeux text-white">
+                "Helldivers 2" est la suite tant attendue du célèbre jeu de tir tactique. Dans ce jeu, les joueurs
+                incarnent des soldats d'élite de l'avenir, membres de l'unité des Helldivers, chargés de protéger
+                l'humanité contre une menace extraterrestre mortelle. Avec des graphismes améliorés, une action
+                frénétique et de nouvelles fonctionnalités, "Helldivers 2" offre une expérience de jeu encore plus
+                intense que son prédécesseur. Les joueurs devront coopérer stratégiquement pour survivre aux hordes
+                d'ennemis et accomplir des missions périlleuses dans des environnements hostiles et variés.
+                Préparez-vous à embarquer dans une aventure explosive où la coordination d'équipe et les compétences
+                tactiques sont essentielles pour la victoire.
+              </p>
+            </div>
+
+            <div class="position-relative col-lg-4 col-12 d-flex row justify-content-center colJeux desktop-only">
+              <div class="position-relative">
+                <img src="images/Valorant.jpg" alt="Valorant" class="my-4 imgJeux">
+                <button class="btn-acheter purple-button">Acheter</button>
+              </div>
+              <p class="textJeux text-white">
+                "Valorant" plonge les joueurs dans un univers compétitif et stratégique, où des agents spéciaux
+                s'affrontent dans des batailles intenses. Dans ce monde futuriste, les équipes de cinq joueurs
+                rivalisent pour remplir des objectifs spécifiques ou éliminer leurs adversaires. Chaque joueur incarne
+                un agent doté de compétences uniques, ajoutant une dimension stratégique passionnante au gameplay. Avec
+                une variété d'agents, d'armes et d'équipements, Valorant offre une expérience de jeu immersive et
+                palpitante. Les graphismes de haute qualité et le gameplay fluide garantissent des heures d'adrénaline
+                et d'excitation pour les joueurs de tous niveaux. Préparez-vous à affronter des défis, à coordonner des
+                stratégies et à rivaliser pour la victoire dans l'univers dynamique de Valorant.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="justify-content-md-center d-md-flex row">
+        <h1 class="text-center">Équipe</h1>
+
+        <div class="row membre-equipe mt-5">
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="images/Dora.jpg" alt="Dora" class="mt-2 mb-2 img-fluid img-thumbnail img-equipe">
+          </div>
+          <div class="col-12 col-md-6 text-center row d-flex align-items-center">
+            <h1 class="text-light">Dora</h1>
+            <p class="text-light">
+              Dora occupe le poste de directrice en chef au sein de Moon STUDIO. En cette qualité, elle est responsable
+              de superviser et de diriger de nombreux projets de développement de jeux vidéo. Son rôle est essentiel
+              pour assurer la cohérence, la qualité et l'efficacité de la production des jeux. Dora travaille en étroite
+              collaboration avec les équipes créatives et techniques pour garantir que les projets respectent les
+              objectifs de l'entreprise tout en répondant aux attentes des joueurs. Sa vision stratégique et son
+              leadership contribuent à l'excellence et au succès continu de Moon STUDIO dans l'industrie du jeu vidéo.
+            </p>
+          </div>
+        </div>
+
+        <div class="row membre-equipe mt-5">
+          <div class="col-12 col-md-6 d-flex justify-content-center order-md-2">
+            <img src="images/Babouche.jpg" alt="Dora" class="mt-2 mb-2 img-fluid img-thumbnail img-equipe">
+          </div>
+          <div class="col-12 col-md-6 row order-md-1 text-center d-flex align-items-center">
+            <h1 class="text-light">Babouche</h1>
+            <p class="text-light">
+              Babouche occupe une position clé au sein de Moon STUDIO en tant qu'artiste talentueux. Son rôle est de
+              donner vie aux mondes imaginaires créés par l'équipe de développement de jeux vidéo. Grâce à sa créativité
+              et à son expertise artistique, Babouche crée des environnements visuellement époustouflants et des
+              personnages emblématiques qui captivent les joueurs. Son travail consiste à concevoir des paysages, des
+              décors, des animations et des éléments graphiques qui enrichissent l'expérience de jeu et contribuent à
+              l'immersion des joueurs dans des univers fantastiques.
+            </p>
+          </div>
+        </div>
+
+        <div class="row membre-equipe mt-5">
+          <div class="col-12 col-md-6 d-flex justify-content-center">
+            <img src="images/Diego.jpg" alt="Dora" class="mt-2 mb-2 img-fluid img-thumbnail img-equipe">
+          </div>
+          <div class="col-12 col-md-6 row text-center d-flex align-items-center">
+            <h1 class="text-light">Diego</h1>
+            <p class="text-light">
+              Diego joue un rôle essentiel chez Moon STUDIO en tant qu'expert en gameplay. Son principal objectif est
+              d'assurer que chaque interaction avec les jeux développés par l'équipe soit captivante et fluide. Il
+              travaille en étroite collaboration avec les concepteurs de jeux et les programmeurs pour créer des
+              mécanismes de jeu innovants et des expériences interactives engageantes. Diego est responsable de
+              l'équilibre entre le défi et le divertissement dans les jeux, en veillant à ce que les joueurs soient
+              constamment stimulés et motivés à progresser. Son expertise technique et sa passion pour les jeux vidéo
+              font de lui un atout précieux pour l'équipe de développement de Moon STUDIO.
+            </p>
+          </div>
+        </div>
+
+        <div class="row membre-equipe mt-5">
+          <div class="col-12 col-md-6 d-flex justify-content-center order-md-2">
+            <img src="images/Chipeur.jpg" alt="Dora" class="mt-2 mb-2 img-fluid img-thumbnail img-equipe">
+          </div>
+          <div class="col-12 col-md-6 row order-md-1 text-center d-flex align-items-center">
+            <h1 class="text-light">Chipeur</h1>
+            <p class="text-light">
+              Chipeur occupe un rôle crucial chez Moon STUDIO en tant que maître de l'histoire. Son travail consiste à
+              tisser des récits riches et complexes qui transportent les joueurs dans des mondes imaginaires. Il est
+              chargé de concevoir des scénarios captivants, des dialogues intrigants et des arcs narratifs convaincants
+              pour les jeux développés par l'équipe. Chipeur travaille en étroite collaboration avec les scénaristes,
+              les concepteurs de niveaux et les artistes pour s'assurer que l'histoire s'intègre harmonieusement au
+              gameplay et à l'esthétique visuelle du jeu. Son imagination débordante et sa capacité à créer des univers
+              fictionnels immersifs font de lui un membre indispensable de l'équipe de Moon STUDIO.
+            </p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div>
+      <div class="row">
+        <div class="col-md-6 ps-5">
+          <h5>Liens rapides</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Home</a></li>
+            <li><a href="#" class="text-white">À Propos</a></li>
+            <li><a href="#" class="text-white">Services</a></li>
+            <li><a href="#" class="text-white">Portfolio</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 ps-5">
+          <h5>Contactez-nous</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill"></i> Adresse: 123 Moon Street, Lunar City</li>
+            <li><i class="bi bi-envelope-fill"></i> Email: contact@moonstudio.com</li>
+            <li><i class="bi bi-telephone-fill"></i> Téléphone: +123 456 7890</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="text-light ps-4">&copy; 2024 Moon STUDIO - Tous droits réservés.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-md-end">
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+
+</html>
