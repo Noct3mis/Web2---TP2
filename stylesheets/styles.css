@@ -1,0 +1,196 @@
+main {
+    max-width: 100% !important;
+}
+
+.connexion-body {
+    min-height: 100vh;
+}
+
+body .connexion-main {
+    flex-grow: 1;
+    margin-bottom: 80px !important;
+    margin-top: 80px !important;
+    color: #a348d8;
+}
+
+.connexion {
+    background-color: #1b1b1b;
+    box-shadow: 0 0 10px 10px #dfdfdf;
+    border-radius: 10px;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+footer a {
+    text-decoration: none !important;
+}
+
+footer a:hover {
+    text-decoration: underline !important;
+}
+
+.theme-light {
+    background-color: #dfdfdf;
+    color: #41104e;
+}
+
+.theme-light p {
+    color: #2e2e2e;
+}
+
+.theme-dark {
+    background-color: #2e2e2e;
+    color: #a348d8;
+}
+
+.theme-dark p {
+    color: #cccccc;
+}
+
+.container {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+.navbar {
+    box-shadow: 0 0 20px 0 rgba(1, 1, 1, 0.6);
+}
+
+.navbar-toggler-icon {
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border: none!important;
+}
+
+.purple-button{
+    background-color: #600079;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.purple-button:hover {
+    background-color: #790097;
+}
+
+.nav-link {
+    color: #000000!important;
+    font-weight: 500!important;
+    position: relative!important;
+}
+
+@media (min-width: 991px) {
+    .position-relative .desktop-only {
+        position: relative;
+    }
+
+    .connexion {
+        max-width: 40% !important;
+    }
+
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #a300cc;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+
+    .img-equipe {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 991px) {
+    body p {
+        font-size: medium;
+    }
+
+    .row > .colJeux {
+        display: flex !important;
+        margin-top: 50px !important;
+    }
+
+    .row {
+        display: block !important;
+        margin: 0 !important;
+    }
+}
+
+.colJeux {
+    max-width: 404px !important;
+    overflow-wrap: break-word;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px 10px #dfdfdf;
+    border-radius: 10px;
+}
+
+.imgJeux:hover {
+    filter: blur(3px);
+}
+
+.btn-acheter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    
+}
+
+.imgJeux:hover + .btn-acheter, .btn-acheter:hover {
+    position: absolute;
+    visibility: visible;
+}
+
+.imgJeux {
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 10px !important;
+}
+
+.textJeux {
+    max-width: 400px;
+}
+
+.carousel-item {
+    max-height: 50%;
+}
+
+.membre-equipe {
+    align-items: center;
+    max-width: 1000px !important;
+    background-color: #0f0f0f;
+    box-shadow: 0 0 10px 10px #dfdfdf;
+    border-radius: 10px;
+}
+
+.img-equipe {
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: 0 0 20px 0 rgba(1, 1, 1, 0.6);
+    width: 350px !important;
+    height: 350px !important;
+}
